@@ -78,6 +78,14 @@ class Main extends PluginBase implements Listener {
         }
         $event->getPlayer()->getInventory()->addItem(Item::get(388, 0, 1));
         return true;
+        
+      case Block::NETHER_QUARTZ_ORE:
+        $event->setDrops([]);
+        if(!$event->getBlock()->isCompatibleWithTool($event->getItem())){
+          return false;
+        }
+        $event->getPlayer()->getInventory()->addItem(Item::get(406, 0, rand(2, 5)));
+        return true;
     }
     
   }
