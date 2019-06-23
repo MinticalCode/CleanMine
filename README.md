@@ -1,2 +1,6 @@
 # CleanMine
-A Pocketmine plugin designed for advanced mining. Ingots are now given without smelting, and items are automatically sent to your inventory. 
+A Pocketmine plugin designed for advanced mining. 
+
+# Features
+- [X] Ingots are given instead of the ore. 
+- [X] Items are now sent directly to inventory
